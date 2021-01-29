@@ -14,20 +14,27 @@
   .my-btn:focus {
     background: teal;
   }
-  li:first-child {
+  /* li:first-child {
     color: red;
   }
   li:last-child {
     color: orange;
+  } */
+  /* li:nth-child(2n) {
+    color: blue;
+  } */
+  .fruits li:nth-child(1) {
+    color: yellow;
   }
 </style>
   </head>
   <body>
 <button class="my-btn">HELLO</button>
-<ul>
-  <li>pear</li> <!-- 선택  -->
-  <li>lemon</li>
+<ul class="fruits">
+  <div>pear</div> 
+  <li>lemon</li> <!-- 선택  -->
   <li>orange</li>
+  <li>mango</li> <!-- 선택  -->
 </ul>
   </body>
 </html>
