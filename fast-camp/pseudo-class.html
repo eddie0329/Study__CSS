@@ -23,21 +23,30 @@
   /* li:nth-child(2n) {
     color: blue;
   } */
-  .fruits li:nth-child(1) {
+  /* .fruits li:nth-child(1) {
     color: yellow;
   }
   .fruits li:nth-of-type(1) {
     color: red;
+  } */
+  ul li::before{
+    content: "fruit";
+    font-size: large;
+    color: red;
+  }
+  ul li::after {
+    content: "END";
+    color: blue;
   }
 </style>
   </head>
   <body>
 <button class="my-btn">HELLO</button>
 <ul class="fruits">
-  <div>pear</div> 
-  <li>lemon</li> <!-- 선택  -->
+  <li>pear</li> 
+  <li>lemon</li> 
   <li>orange</li>
-  <li>mango</li> <!-- 선택  -->
+  <li>mango</li>
 </ul>
   </body>
 </html>
